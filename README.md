@@ -4,6 +4,8 @@ Before proceeding this is my submission for week 2 encode.club AI and GPT bootca
 
 AI Joke Generator is a web application that uses OpenAI's GPT-3.5 Turbo model to generate custom jokes based on user input. Built with Next.js, TypeScript, and shadcn UI, this project demonstrates how to create an interactive AI-powered application.
 
+![JokeGenerator Interface](https://github.com/ilhamfadheel/joke-gpt/raw/main/jokegenerator.png)
+
 ## Features
 
 - Generate jokes on any topic
