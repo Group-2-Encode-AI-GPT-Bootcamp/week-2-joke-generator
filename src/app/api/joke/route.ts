@@ -2,7 +2,8 @@ import OpenAI from "openai";
 import { NextResponse } from 'next/server';
 
 const openai = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    // apiKey: process.env.OPENAI_API_KEY,
+    baseURL: "http://127.0.0.1:5000/v1",
 });
 
 export async function POST(req: Request) {
@@ -25,6 +26,7 @@ export async function POST(req: Request) {
             temperature: temperature,
         });
 
+        console.log('Joke request:', completion);
         console.log('Generated joke:', completion.choices[0].message.content);
 
         return NextResponse.json({ joke: completion.choices[0].message.content });
